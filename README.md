@@ -6,6 +6,8 @@ https://linkedin-clone-rugg-d55c2.web.app/
 
 Download the folder and open it in any IDE of your choice (my choice being VSCode). 
 
-Open the terminal by ctrl+j and run the command npm start. 
+Open the terminal by ctrl+j and run the command **npm start**. 
+
+This opens it to a new window on your browser and voila theres your personal linkedin.
 
 
