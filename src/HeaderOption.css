@@ -1,0 +1,30 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.headerOption__title {
+
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.headerOption:hover {
+  color: white;
+}
+
+.headerOption__icon {
+  display: flex;
+  color: lightgray;
+  cursor: pointer;
+  object-fit: contain;
+  height: 25px !important; /* overrides the red color */
+  width: 25px !important;
+}

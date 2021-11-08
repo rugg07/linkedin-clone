@@ -1,0 +1,18 @@
+.app {
+  background-color: #f3f2fe; /*Main background colour*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__body {
+  display: flex;
+  width: 100%;
+  margin-top: 35px;
+  max-width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*in app body 3 sections are divided as 20%, 30% and 20%*/
+/*So we do flex 0.2, 0.6,0.2 (sum of flex should be 1)*/

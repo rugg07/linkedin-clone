@@ -1,0 +1,46 @@
+.feed {
+  flex: 0.6; /*60% of screen*/
+  margin: 0 20px;  /*top and sides*/
+}
+
+.feed__inputContainer {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 20px; /*oberrides padding-bottom of 10px*/
+  margin-bottom: 20px;
+  border-radius: 10px;
+      border-bottom: 2px solid #a9a9a9;
+}
+
+.feed__input {
+  border-radius: 30px;
+  border: 1px solid lightgray;
+  display: flex;
+  padding: 10px;
+  padding-left: 15px;
+  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.feed__input > form {
+  display: flex;
+    width: 100%; /*Take up entire space given*/
+}
+
+.feed__input > form > input {
+  border: none ;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.feed__input > form > button {
+  display: none; /*hiding form button since we will make our own but this allows us to use it if the user presses enter*/
+}
+
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
+}

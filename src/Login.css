@@ -1,0 +1,146 @@
+.login__page{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f3f2fe;
+}
+
+/*Left Side*/
+.login__side{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__side>img{
+object-fit: contain;
+width: 50px;
+height: 50px;
+padding: 20px;
+align-items: flex-start;
+}
+
+.login__side>form{
+  display: flex;
+  flex-direction: column;
+}
+
+.login__side>form>input{
+  width: 365px;
+  padding:15px ;
+  margin: 10px;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.login__side>p{
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/*Login Button*/
+.btn-hover.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/*Sign In*/
+.sign{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sign>p{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 5px;
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.login__register{
+  color: rgba(65, 132, 234);
+  display: inline-block;
+    position: relative;
+  font-size: 15px;
+padding: 2px;
+cursor: pointer;
+}
+
+
+
+/*Underline transition while hovering*/
+
+
+.login__register:hover{
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+.login__register:hover::after{
+  transform: scaleX(1);
+transform-origin: bottom left;
+  
+}
+
+
+.login__register::after{
+content: '';
+position: absolute;
+width: 87%; /*Check why 90% only and not 100%*/
+transform: scaleX(0);
+height: 2px;
+bottom: 0; /*when position is absolute or fixed we use top, bottom, left, right to pad*/
+left: 0;
+background-color: black;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
