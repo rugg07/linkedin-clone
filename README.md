@@ -4,14 +4,13 @@ Welcome to the **LinkedIn Clone** repository. This project is a full-stack web a
 
 <img>![image](https://user-images.githubusercontent.com/86529890/147869942-03a3ae18-00c9-40bd-905d-0e7683ec545d.png) </img>
 
----
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Tech Stack](#tech-stack)
-4. [Project Setup](#project-setup)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
 5. [Usage](#usage)
 6. [Contributing](#contributing)
 7. [License](#license)
@@ -21,129 +20,101 @@ Welcome to the **LinkedIn Clone** repository. This project is a full-stack web a
 
 ## Introduction
 
-This project aims to replicate the essential functionalities of LinkedIn, providing a platform where users can:
-
-- Create and manage professional profiles.
-- Connect with other users by sending and accepting connection requests.
-- Share posts, updates, and professional achievements.
-- Interact with posts through likes and comments.
-
-This clone project serves as a comprehensive showcase of web development skills, covering frontend design, backend logic, database management, and deployment.
+This project aims to replicate the core functionalities of LinkedIn's interface, providing a platform to practice and demonstrate skills in React.js, Redux, and Firebase integration.
 
 ---
 
 ## Features
 
-- **User Authentication**: Secure signup and login functionality with JWT-based authentication.
-- **Profile Management**: Users can update their profile details, including a profile picture and bio.
-- **Connections**: Send, accept, and manage connection requests.
-- **Post Management**: Create, edit, delete, and interact with posts.
-- **Real-Time Updates**: Notifications and live updates for user interactions.
-- **Responsive Design**: Fully optimized for desktop and mobile devices.
+- **User Authentication:** Sign in with Google accounts using Firebase Authentication.
+- **Post Creation:** Users can create and share posts with the community.
+- **Real-time Updates:** Posts and user interactions are updated in real-time.
+- **Responsive Design:** Optimized for various screen sizes to ensure a seamless user experience across devices.
 
 ---
 
-## Tech Stack
+## Technologies Used
 
-### Frontend:
-- React.js
-- Redux
-- Tailwind CSS
-- Axios
-
-### Backend:
-- Node.js
-- Express.js
-- MongoDB (Mongoose ORM)
-
-### Deployment:
-- AWS S3 (Static Assets)
-- AWS EC2 (Server Hosting)
-- GitHub Actions (CI/CD)
+- **React.js:** A JavaScript library for building user interfaces.
+- **Redux:** A predictable state container for JavaScript apps.
+- **Firebase:** Utilized for authentication and real-time database services.
+- **Styled Components:** For writing CSS-in-JS and styling React components.
 
 ---
 
-## Project Setup
+## Installation
 
-To set up and run the project locally, follow these steps:
-
-### Prerequisites:
-- Node.js (v14+)
-- MongoDB
-
-### Steps:
+To run this project locally, follow these steps:
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/rugg07/linkedin-clone.git
    cd linkedin-clone
    ```
 
 2. **Install dependencies:**
+
+   Ensure you have [Node.js](https://nodejs.org/) installed. Then, install the required packages:
+
    ```bash
    npm install
-   cd client
-   npm install
    ```
 
-3. **Set up environment variables:**
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   PORT=5000
-   MONGO_URI=<your_mongodb_connection_string>
-   JWT_SECRET=<your_jwt_secret>
-   ```
+3. **Configure Firebase:**
 
-4. **Run the application:**
-   - **Backend:**
-     ```bash
-     npm start
-     ```
-   - **Frontend:**
-     ```bash
-     cd client
-     npm start
-     ```
+   - Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+   - Enable Google authentication in the Firebase Authentication section.
+   - Set up a Firestore database.
+   - Create a `.env` file in the root directory and add your Firebase configuration:
 
-5. **Access the application:**
-   Open your browser and navigate to `http://localhost:3000`.
+     ```env
+     REACT_APP_API_KEY=your_api_key
+     REACT_APP_AUTH_DOMAIN=your_project_id.firebaseapp.com
+     REACT_APP_PROJECT_ID=your_project_id
+     REACT_APP_STORAGE_BUCKET=your_project_id.appspot.com
+     REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+     REACT_APP_APP_ID=your_app_id
+     ```
 
 ---
 
 ## Usage
 
-1. **Sign up or log in:**
-   Create a new account or log in with an existing one.
+To start the development server, run:
 
-2. **Build your profile:**
-   Add your profile details and upload a profile picture.
+```bash
+npm start
+```
 
-3. **Connect with others:**
-   Send and accept connection requests to expand your network.
-
-4. **Share and interact:**
-   Post updates, like, and comment on posts shared by others.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Here's how you can contribute:
+Contributions are welcome! To contribute:
 
 1. Fork the repository.
-2. Create a new branch for your feature:
+2. Create a new branch:
+
    ```bash
    git checkout -b feature-name
    ```
-3. Commit your changes:
+
+3. Make your changes and commit them:
+
    ```bash
-   git commit -m "Add feature-name"
+   git commit -m "Add feature name"
    ```
-4. Push your changes:
+
+4. Push to the branch:
+
    ```bash
    git push origin feature-name
    ```
-5. Create a Pull Request.
+
+5. Open a Pull Request.
 
 ---
 
@@ -155,12 +126,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions, suggestions, or feedback, feel free to reach out:
+For any questions or suggestions, feel free to contact:
 
 - **Name:** Hrugved Pawar
 - **GitHub:** [@rugg07](https://github.com/rugg07)
 
 ---
 
-Thank you for exploring this project! Your feedback and contributions are greatly appreciated.
-
+Thank you for exploring this project! Your feedback is greatly appreciated. 
